@@ -1,12 +1,12 @@
-function max_date(all_dates) {
-  var max_dt = all_dates[0],
-  max_dtObj = new Date(all_dates[0]);
+function min_date(all_dates) {
+  var min_dt = all_dates[0],
+  min_dtObj = new Date(all_dates[0]);
   all_dates.forEach(function (dt) {
-    if (new Date(dt) > max_dtObj) {
-      max_dt = dt;
-      max_dtObj = new Date(dt);
+    if (new Date(dt) < min_dtObj) {
+      min_dt = dt;
+      min_dtObj = new Date(dt);
     }
   });
-  return max_dt;
+  return min_dt;
 }
-console.log(max_date(["2015/02/01", "2015/02/02", "2015/01/03"]));
+console.log(min_date(["2015/02/01", "2015/02/02", "2015/01/03"]));
