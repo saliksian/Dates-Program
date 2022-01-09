@@ -14,6 +14,6 @@ function timeConvert(dt) {
   }
 
 
-  console.log(`${hour}hours and ${mint}mintues`);
+  console.log(`${hour} hours and ${mint} mintues`);
 }
-timeConvert(200);
+timeConvert(240);
